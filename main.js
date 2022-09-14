@@ -1,9 +1,14 @@
 let btn = document.querySelectorAll("button");
 let display = document.querySelector(".display");
+let his = document.getElementById("his");
+let result = document.querySelector(".history");
 btn.forEach((ele) => {
   ele.onclick = () => {
     if (display.innerText != "" && ele.id == "equal") {
-      display.innerText = eval(display.innerText);
+      display.innerText = `${display.innerText} \t = ${eval(
+        display.innerText
+      )}`;
+      result.innerHTML += `${display.innerText} \n`;
     } else if (display.innerText == "" && ele.id == "equal") {
       display.innerText = "Empty!";
     } else if (ele.id == "clear") {
@@ -13,5 +18,10 @@ btn.forEach((ele) => {
     } else {
       display.innerText += ele.innerText;
     }
+    display.innerText == ele.value;
   };
 });
+
+his.onclick = () => {
+  result.style.display = "block";
+};

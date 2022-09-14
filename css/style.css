@@ -8,7 +8,7 @@ body {
 .container {
   width: fit-content;
   background-color: #222;
-  margin: 70px auto;
+  margin: 55px auto;
   padding: 20px;
   box-shadow: 0 0 30px #000;
   border-radius: 10px;
@@ -16,6 +16,7 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  position: relative;
 }
 .display {
   padding: 10px;
@@ -68,4 +69,24 @@ div button:hover {
 }
 .operator {
   color: aquamarine;
+}
+#his {
+  color: white;
+  position: relative;
+  top: -40px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.history {
+  display: none;
+  position: absolute;
+  width: 80px;
+  height: auto;
+  left: 30px;
+  top: 40px;
+  color: white;
+  background-color: #1b2f38;
+  border-radius: 10px;
+  padding: 20px;
 }
